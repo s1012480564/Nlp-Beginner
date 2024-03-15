@@ -170,7 +170,7 @@ class Instructor:
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
-    parser.add_argument('--model_name', default='LSTM', type=str)
+    parser.add_argument('--model_name', default='CNN', type=str)
     parser.add_argument('--dataset', default='small', type=str)
     parser.add_argument('--optimizer', default='AdamW', type=str)
     parser.add_argument('--initializer', default='kaiming_uniform_', type=str)
@@ -178,12 +178,11 @@ if __name__ == '__main__':
     parser.add_argument('--dropout', default=0.1, type=float,
                         help='try 0.1 ~ 0.3 for small dataset, 0.5 for large ones')
     parser.add_argument('--l2reg', default=0.01, type=float, help='try 1e-5 for BERT, 1e-2 for others')
-    parser.add_argument('--epochs', default=5, type=int, help='try larger number for non-BERT models')
+    parser.add_argument('--epochs', default=10, type=int, help='try larger number for non-BERT models')
     parser.add_argument('--batch_size', default=50, type=int, help='try 16, 32, 64 for BERT models')
     parser.add_argument('--log_step', default=10, type=int)
     parser.add_argument('--embed_dim', default=300, type=int)
     parser.add_argument('--hidden_dim', default=300, type=int)
-    parser.add_argument('--bert_dim', default=768, type=int)
     parser.add_argument('--kernel_sizes', default=[3, 4, 5], type=list)
     parser.add_argument('--kernel_num', default=100, type=int)
     parser.add_argument('--max_seq_len', default=85, type=int)

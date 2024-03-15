@@ -4,3 +4,5 @@
 # Copyright (C) 2024. All Rights Reserved.
 
 from .lstm_crf import LSTM_CRF
+from .bert_crf import BERT_CRF
+from .roberta_crf import ROBERTA_CRF

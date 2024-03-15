@@ -5,3 +5,5 @@
 
 from .cnn import CNN
 from .lstm import LSTM
+from .bert import BERT
+from .roberta import ROBERTA

@@ -37,8 +37,8 @@ class Tokenizer(object):
         words = sentence.split()
         unk_idx = self.vocab_size
         tokens = [self.word2idx[w] if w in self.word2idx else unk_idx for w in words]
-        if len(tokens) == 0:
-            tokens = [0]
+        if len(tokens) == 0:  # 空白句放一个[UNK]
+            tokens = [unk_idx]
         return pad_and_truncate(tokens, self.max_seq_len)
 
 
@@ -50,8 +50,9 @@ def build_tokenizer(fname, max_seq_len, dat_fname):
         df = pd.read_csv(fname)
         document = ''
         for i in range(len(df)):
-            if df['Phrase'][i] is not np.nan:
-                document += df['Phrase'][i] + ' '
+            phrase = df['Phrase'][i].strip()
+            if phrase:
+                document += phrase + ' '
         tokenizer = Tokenizer(max_seq_len)
         tokenizer.fit(document)
         pickle.dump(tokenizer, open(dat_fname, 'wb'))
@@ -76,12 +77,13 @@ def build_embedding_matrix(word2idx, embed_dim, dat_fname):
     else:
         print('loading word vectors...')
         embedding_matrix = np.zeros((len(word2idx) + 2, embed_dim))  # [PAD] and [UNK] are all-zeros
-        fname = 'pre_train/glove.twitter.27B/glove.twitter.27B.' + str(embed_dim) + 'd.txt' if embed_dim != 300 else 'pre_train/glove.42B.300d.txt'
+        fname = 'pre_train/glove.twitter.27B/glove.twitter.27B.' + str(
+            embed_dim) + 'd.txt' if embed_dim != 300 else 'pre_train/glove.42B.300d.txt'
         word_vec = _load_word_vec(fname, word2idx=word2idx, embed_dim=embed_dim)
         print('building embedding_matrix:', dat_fname)
         for word, i in word2idx.items():
             vec = word_vec.get(word)
-            if vec is not None: # words not found ([UNK]) in embedding index will be all-zeros.
+            if vec is not None:  # words not found ([UNK]) in embedding index will be all-zeros.
                 embedding_matrix[i] = vec
         pickle.dump(embedding_matrix, open(dat_fname, 'wb'))
     return embedding_matrix
@@ -90,10 +92,8 @@ def build_embedding_matrix(word2idx, embed_dim, dat_fname):
 class TextDataset(Dataset):
     def __init__(self, path, tokenizer):
         df = pd.read_csv(path)
-        tokens=[]
+        tokens = []
         for phrase in df['Phrase']:
-            if phrase is np.nan:
-                phrase=''
             phrase_tokens = tokenizer.transform(phrase)
             tokens.append(phrase_tokens)
         self.data = list(zip(tokens, df['Sentiment'].values))

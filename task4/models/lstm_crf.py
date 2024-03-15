@@ -12,7 +12,6 @@ from task4.layers import BiLSTM
 class LSTM_CRF(nn.Module):  # https://arxiv.org/pdf/1603.01360.pdf
     def __init__(self, embedding_matrix, args):
         super(LSTM_CRF, self).__init__()
-        self.max_seq_len = args.max_seq_len
         self.embed = nn.Embedding.from_pretrained(torch.tensor(embedding_matrix, dtype=torch.float))
         self.bilstm = BiLSTM(args)
         self.fc = nn.Linear(args.hidden_dim, args.target_size)
