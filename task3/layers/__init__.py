@@ -8,3 +8,5 @@ from .input_encoding import InputEncoding
 from .local_inference_modeling import LocalInferenceModeling
 from .inference_composition import InferenceComposition
 from .prediction import Prediction
+from .sic_model import SICModel
+from .interpretation_model import InterpretationModel

@@ -4,3 +4,4 @@
 # Copyright (C) 2024. All Rights Reserved.
 
 from .esim import ESIM
+from .self_explain_robert import ExplainableModel

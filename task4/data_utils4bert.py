@@ -57,13 +57,14 @@ class NERDataset(Dataset):
                 if line[0] == '-DOCSTART-':
                     continue
                 # BERT问题很大，单词会被拆成 ## 前后两部分，长度变长了，位置对应的也不对了，特别离谱
-                # 对于单词可能被拆分，这里我直接保留第一个词，当然，靠谱的做法是词向量取平均值。这要写起来就乱套了，超级麻烦，还是算了
+                # 对于单词可能被拆分，这里我直接保留第一个词
+                # 或许最好的做法是被拆分的词取词向量的平均值，预先对每个样本处理出一个用于打分加权的矩阵即可，懒得写了就没写
                 sentence_tokens.append(tokenizer.encode(line[0], add_special_tokens=False)[0])
                 labels_tokens.append(label2idx[line[3]])
             elif sentence_tokens:  # 遇到空白行，DOC结束，但是要注意DOCSTART下一行的空白以及连续空白行导致空白句子的情况
+                self.data.append((sentence_tokens, labels_tokens))
                 sentence_tokens = []
                 labels_tokens = []
-                self.data.append((sentence_tokens, labels_tokens))
 
     def __getitem__(self, index):
         return self.data[index]
