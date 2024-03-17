@@ -5,4 +5,5 @@
 然后不知道报告有啥内容要求，暂时没怎么写  
 还有缺算力，太慢了，基本上只拿少部分样本简单跑了下  
 任务2用Bert/Robert写了下，任务4用Bert/Robert+CRF写了下，任务5用GPT2写了下  
-任务3正在复现self-explainable-framework+robert那篇，快了快了快写完了，3.17肯定写完    
+任务3复现了self-explainable-framework+robert那篇，但是拿部分样本都跑不动，太慢了
+log怎么没传上去，明天再跑一下任务3，把log全传一下
