@@ -1,0 +1,98 @@
+cuda memory allocated: 439102464
+> n_trainable_params: 109490050, n_nontrainable_params: 0
+> training arguments:
+>>> model_name: BERT_CRF
+>>> dataset: small
+>>> optimizer: <class 'torch.optim.adamw.AdamW'>
+>>> initializer: <function kaiming_uniform_ at 0x0000021BA96CA3B0>
+>>> lr: 2e-05
+>>> dropout: 0.1
+>>> l2reg: 1e-05
+>>> epochs: 5
+>>> batch_size: 16
+>>> log_step: 10
+>>> max_seq_len: 512
+>>> device: cuda
+>>> seed: 42
+>>> valset_ratio: 0.0
+>>> model_class: <class 'models.bert_crf.BERT_CRF'>
+>>> dataset_file: {'train': 'dataset/train_small.txt', 'test': 'dataset/test.txt'}
+>>> bert_config_path: ../../../pretrained/BertConfig/models--bert-base-uncased/snapshots/86b5e0934494bd15c9632b12f734a8a67f723594
+>>> bert_model_path: ../../../pretrained/BertModel/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b
+>>> bert_tokenizer_path: ../../../pretrained/BertTokenizer/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b
+>>> roberta_config_path: ../../../pretrained/RobertaConfig/models--roberta-base/snapshots/e2da8e2f811d1448a5b465c236feacd80ffbac7b
+>>> roberta_model_path: ../../../pretrained/RobertaModel/models--roberta-base/snapshots/e2da8e2f811d1448a5b465c236feacd80ffbac7b
+>>> roberta_tokenizer_path: ../../../pretrained/RobertaTokenizer/models--roberta-base/snapshots/e2da8e2f811d1448a5b465c236feacd80ffbac7b
+>>> tokenizer: BertTokenizer(name_or_path='../../../pretrained/BertTokenizer/models--bert-base-uncased/snapshots/0a6aa9128b6194f4f3c4db429b6cb4891cdb421b', vocab_size=30522, model_max_length=1000000000000000019884624838656, is_fast=False, padding_side='right', truncation_side='right', special_tokens={'unk_token': '[UNK]', 'sep_token': '[SEP]', 'pad_token': '[PAD]', 'cls_token': '[CLS]', 'mask_token': '[MASK]'}, clean_up_tokenization_spaces=True),  added_tokens_decoder={
+	0: AddedToken("[PAD]", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	100: AddedToken("[UNK]", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	101: AddedToken("[CLS]", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	102: AddedToken("[SEP]", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	103: AddedToken("[MASK]", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+}
+>>> target_size: 10
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 0
+loss: 18.6780, f1: 0.5645
+loss: 14.4750, f1: 0.7032
+loss: 12.2516, f1: 0.7515
+loss: 10.7248, f1: 0.7853
+loss: 9.5746, f1: 0.8119
+loss: 8.6959, f1: 0.8285
+loss: 7.9663, f1: 0.8427
+loss: 7.4243, f1: 0.8545
+loss: 6.9535, f1: 0.8646
+> val_f1: 0.9370
+>> saved: state_dict/BERT_CRF_small_val_f1_0.937
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 1
+loss: 2.2350, f1: 0.9541
+loss: 2.2420, f1: 0.9556
+loss: 2.1994, f1: 0.9575
+loss: 2.1312, f1: 0.9581
+loss: 2.0205, f1: 0.9597
+loss: 1.9315, f1: 0.9616
+loss: 1.8676, f1: 0.9625
+loss: 1.8021, f1: 0.9636
+loss: 1.7379, f1: 0.9650
+> val_f1: 0.9561
+>> saved: state_dict/BERT_CRF_small_val_f1_0.9561
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 2
+loss: 0.8470, f1: 0.9852
+loss: 0.7914, f1: 0.9840
+loss: 0.7935, f1: 0.9834
+loss: 0.7709, f1: 0.9840
+loss: 0.7869, f1: 0.9845
+loss: 0.7632, f1: 0.9848
+loss: 0.7938, f1: 0.9844
+loss: 0.7941, f1: 0.9842
+loss: 0.7991, f1: 0.9842
+> val_f1: 0.9551
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 3
+loss: 0.4131, f1: 0.9892
+loss: 0.4373, f1: 0.9904
+loss: 0.4666, f1: 0.9905
+loss: 0.4439, f1: 0.9914
+loss: 0.4510, f1: 0.9911
+loss: 0.4544, f1: 0.9908
+loss: 0.4531, f1: 0.9907
+loss: 0.4360, f1: 0.9910
+loss: 0.4332, f1: 0.9908
+> val_f1: 0.9576
+>> saved: state_dict/BERT_CRF_small_val_f1_0.9576
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 4
+loss: 0.2690, f1: 0.9948
+loss: 0.2691, f1: 0.9952
+loss: 0.2367, f1: 0.9962
+loss: 0.2310, f1: 0.9968
+loss: 0.2345, f1: 0.9969
+loss: 0.2181, f1: 0.9967
+loss: 0.2126, f1: 0.9967
+loss: 0.2236, f1: 0.9963
+loss: 0.2302, f1: 0.9961
+> val_f1: 0.9606
+>> saved: state_dict/BERT_CRF_small_val_f1_0.9606
+>> test_f1: 0.9606
