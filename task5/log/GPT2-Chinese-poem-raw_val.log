@@ -1,0 +1,442 @@
+cuda memory allocated: 425253888
+> n_trainable_params: 103166208, n_nontrainable_params: 0
+> training arguments:
+>>> model_name: GPT2-Chinese-poem
+>>> dataset: raw
+>>> optimizer: <class 'torch.optim.adamw.AdamW'>
+>>> initializer: <function kaiming_uniform_ at 0x0000025A462F5BD0>
+>>> lr: 0.001
+>>> dropout: 0.1
+>>> l2reg: 0.01
+>>> epochs: 20
+>>> batch_size: 8
+>>> log_step: 1
+>>> max_seq_len: 128
+>>> device: cuda
+>>> seed: 42
+>>> valset_ratio: 0.2
+>>> model_class: <class 'transformers.models.gpt2.modeling_gpt2.GPT2LMHeadModel'>
+>>> dataset_file: {'train': 'dataset/poetryFromTang.txt'}
+>>> gpt2_name: uer/gpt2-chinese-poem
+>>> gpt2_config_path: ../../../pretrained/GPT2Config/models--uer--gpt2-chinese-poem/snapshots/6335c88ef6a3362dcdf2e988577b7bafeda6052b
+>>> gpt2_tokenizer_path: ../../../pretrained/BertTokenizer/models--uer--gpt2-chinese-poem/snapshots/6335c88ef6a3362dcdf2e988577b7bafeda6052b
+>>> gpt2_model_path: ../../../pretrained/GPT2Model/models--uer--gpt2-chinese-poem/snapshots/6335c88ef6a3362dcdf2e988577b7bafeda6052b
+>>> tokenizer: BertTokenizer(name_or_path='../../../pretrained/BertTokenizer/models--uer--gpt2-chinese-poem/snapshots/6335c88ef6a3362dcdf2e988577b7bafeda6052b', vocab_size=22557, model_max_length=1000000000000000019884624838656, is_fast=False, padding_side='right', truncation_side='right', special_tokens={'unk_token': '[UNK]', 'sep_token': '[SEP]', 'pad_token': '[PAD]', 'cls_token': '[CLS]', 'mask_token': '[MASK]'}, clean_up_tokenization_spaces=True),  added_tokens_decoder={
+	0: AddedToken("[PAD]", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	100: AddedToken("[UNK]", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	101: AddedToken("[CLS]", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	102: AddedToken("[SEP]", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+	103: AddedToken("[MASK]", rstrip=False, lstrip=False, single_word=False, normalized=False, special=True),
+}
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 0
+loss: 10.0509, perplexity: 23176.2271
+loss: 9.8111, perplexity: 18234.5753
+loss: 9.7356, perplexity: 16908.5527
+loss: 9.7084, perplexity: 16455.4922
+loss: 9.6558, perplexity: 15611.6790
+loss: 9.6175, perplexity: 15025.9557
+loss: 9.5726, perplexity: 14365.5802
+loss: 9.5234, perplexity: 13676.3130
+loss: 9.4887, perplexity: 13210.0969
+loss: 9.4734, perplexity: 13009.3958
+loss: 9.4483, perplexity: 12687.0786
+loss: 9.4020, perplexity: 12112.0812
+loss: 9.3932, perplexity: 12006.9518
+loss: 9.3492, perplexity: 11489.4776
+loss: 9.3020, perplexity: 10959.9740
+loss: 9.2514, perplexity: 10419.0301
+loss: 9.2270, perplexity: 10168.1488
+> val_perplexity: 4002.4244
+>> saved: state_dict/GPT2-Chinese-poem_raw_val_perplexity_4002.4244
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 1
+loss: 8.3121, perplexity: 4072.9674
+loss: 8.2240, perplexity: 3729.3311
+loss: 8.1453, perplexity: 3447.2049
+loss: 8.2401, perplexity: 3790.0230
+loss: 8.1359, perplexity: 3414.8903
+loss: 8.0644, perplexity: 3179.3655
+loss: 7.9677, perplexity: 2886.2624
+loss: 7.9058, perplexity: 2712.8678
+loss: 7.8203, perplexity: 2490.6115
+loss: 7.7458, perplexity: 2311.9441
+loss: 7.6548, perplexity: 2110.7630
+loss: 7.5633, perplexity: 1926.1566
+loss: 7.4730, perplexity: 1759.9605
+loss: 7.4018, perplexity: 1638.9645
+loss: 7.3184, perplexity: 1507.7465
+loss: 7.2521, perplexity: 1411.0868
+loss: 7.2088, perplexity: 1351.3203
+> val_perplexity: 341.0994
+>> saved: state_dict/GPT2-Chinese-poem_raw_val_perplexity_341.0994
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 2
+loss: 5.6380, perplexity: 280.8990
+loss: 5.9767, perplexity: 394.1371
+loss: 5.8173, perplexity: 336.0494
+loss: 5.7512, perplexity: 314.5830
+loss: 5.7279, perplexity: 307.3263
+loss: 5.7049, perplexity: 300.3488
+loss: 5.7653, perplexity: 319.0364
+loss: 5.6532, perplexity: 285.1999
+loss: 5.5313, perplexity: 252.4630
+loss: 5.4642, perplexity: 236.0984
+loss: 5.3672, perplexity: 214.2572
+loss: 5.3535, perplexity: 211.3430
+loss: 5.3304, perplexity: 206.5133
+loss: 5.2703, perplexity: 194.4754
+loss: 5.1953, perplexity: 180.4276
+loss: 5.1361, perplexity: 170.0570
+loss: 5.1358, perplexity: 170.0020
+> val_perplexity: 76.1538
+>> saved: state_dict/GPT2-Chinese-poem_raw_val_perplexity_76.1538
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 3
+loss: 4.6389, perplexity: 103.4324
+loss: 4.4997, perplexity: 89.9890
+loss: 4.4304, perplexity: 83.9639
+loss: 4.2128, perplexity: 67.5480
+loss: 4.0641, perplexity: 58.2135
+loss: 3.9666, perplexity: 52.8044
+loss: 4.1130, perplexity: 61.1308
+loss: 4.0206, perplexity: 55.7364
+loss: 3.9625, perplexity: 52.5895
+loss: 3.9161, perplexity: 50.2061
+loss: 4.0079, perplexity: 55.0307
+loss: 4.0458, perplexity: 57.1576
+loss: 4.0055, perplexity: 54.9019
+loss: 3.9889, perplexity: 53.9977
+loss: 3.9618, perplexity: 52.5518
+loss: 3.9454, perplexity: 51.6969
+loss: 3.9533, perplexity: 52.1073
+> val_perplexity: 51.3241
+>> saved: state_dict/GPT2-Chinese-poem_raw_val_perplexity_51.3241
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 4
+loss: 3.1593, perplexity: 23.5530
+loss: 3.8171, perplexity: 45.4714
+loss: 3.7035, perplexity: 40.5903
+loss: 3.8826, perplexity: 48.5484
+loss: 3.7420, perplexity: 42.1822
+loss: 3.6595, perplexity: 38.8426
+loss: 3.8284, perplexity: 45.9911
+loss: 3.8682, perplexity: 47.8563
+loss: 3.8410, perplexity: 46.5712
+loss: 3.8591, perplexity: 47.4241
+loss: 3.8293, perplexity: 46.0326
+loss: 3.7672, perplexity: 43.2604
+loss: 3.7779, perplexity: 43.7233
+loss: 3.7704, perplexity: 43.3956
+loss: 3.7952, perplexity: 44.4874
+loss: 3.7906, perplexity: 44.2844
+loss: 3.8215, perplexity: 45.6732
+> val_perplexity: 49.6007
+>> saved: state_dict/GPT2-Chinese-poem_raw_val_perplexity_49.6007
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 5
+loss: 2.7745, perplexity: 16.0305
+loss: 3.4609, perplexity: 31.8465
+loss: 3.8844, perplexity: 48.6366
+loss: 3.7480, perplexity: 42.4346
+loss: 3.8049, perplexity: 44.9187
+loss: 3.8548, perplexity: 47.2210
+loss: 3.7492, perplexity: 42.4851
+loss: 3.9014, perplexity: 49.4717
+loss: 3.9764, perplexity: 53.3242
+loss: 3.9731, perplexity: 53.1513
+loss: 4.0149, perplexity: 55.4194
+loss: 3.9671, perplexity: 52.8288
+loss: 3.9027, perplexity: 49.5373
+loss: 3.8636, perplexity: 47.6351
+loss: 3.8165, perplexity: 45.4447
+loss: 3.8174, perplexity: 45.4843
+loss: 3.8109, perplexity: 45.1932
+> val_perplexity: 48.1939
+>> saved: state_dict/GPT2-Chinese-poem_raw_val_perplexity_48.1939
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 6
+loss: 4.4547, perplexity: 86.0327
+loss: 4.0449, perplexity: 57.1031
+loss: 3.8154, perplexity: 45.3930
+loss: 3.7141, perplexity: 41.0237
+loss: 3.8831, perplexity: 48.5767
+loss: 3.7720, perplexity: 43.4673
+loss: 3.7160, perplexity: 41.0987
+loss: 3.6572, perplexity: 38.7519
+loss: 3.7102, perplexity: 40.8612
+loss: 3.7264, perplexity: 41.5296
+loss: 3.6640, perplexity: 39.0157
+loss: 3.7431, perplexity: 42.2297
+loss: 3.7425, perplexity: 42.2045
+loss: 3.7907, perplexity: 44.2895
+loss: 3.7727, perplexity: 43.4963
+loss: 3.7601, perplexity: 42.9507
+loss: 3.8040, perplexity: 44.8804
+> val_perplexity: 47.2203
+>> saved: state_dict/GPT2-Chinese-poem_raw_val_perplexity_47.2203
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 7
+loss: 3.4887, perplexity: 32.7418
+loss: 3.6526, perplexity: 38.5738
+loss: 3.8284, perplexity: 45.9884
+loss: 3.5912, perplexity: 36.2767
+loss: 3.8041, perplexity: 44.8856
+loss: 3.7173, perplexity: 41.1513
+loss: 3.6457, perplexity: 38.3086
+loss: 3.6491, perplexity: 38.4386
+loss: 3.7238, perplexity: 41.4231
+loss: 3.8375, perplexity: 46.4109
+loss: 3.8084, perplexity: 45.0804
+loss: 3.7536, perplexity: 42.6738
+loss: 3.7915, perplexity: 44.3215
+loss: 3.8349, perplexity: 46.2881
+loss: 3.8161, perplexity: 45.4285
+loss: 3.7944, perplexity: 44.4496
+loss: 3.8496, perplexity: 46.9747
+> val_perplexity: 44.1812
+>> saved: state_dict/GPT2-Chinese-poem_raw_val_perplexity_44.1812
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 8
+loss: 3.8273, perplexity: 45.9401
+loss: 4.0688, perplexity: 58.4846
+loss: 3.7879, perplexity: 44.1631
+loss: 3.8487, perplexity: 46.9338
+loss: 3.6813, perplexity: 39.6977
+loss: 3.5842, perplexity: 36.0235
+loss: 3.6119, perplexity: 37.0375
+loss: 3.7527, perplexity: 42.6374
+loss: 3.7309, perplexity: 41.7175
+loss: 3.6828, perplexity: 39.7591
+loss: 3.6365, perplexity: 37.9599
+loss: 3.6429, perplexity: 38.2014
+loss: 3.6591, perplexity: 38.8259
+loss: 3.6793, perplexity: 39.6201
+loss: 3.6826, perplexity: 39.7514
+loss: 3.6666, perplexity: 39.1201
+loss: 3.6564, perplexity: 38.7216
+> val_perplexity: 43.1428
+>> saved: state_dict/GPT2-Chinese-poem_raw_val_perplexity_43.1428
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 9
+loss: 3.6430, perplexity: 38.2044
+loss: 3.4237, perplexity: 30.6828
+loss: 3.2915, perplexity: 26.8838
+loss: 3.4563, perplexity: 31.7003
+loss: 3.5170, perplexity: 33.6817
+loss: 3.4824, perplexity: 32.5368
+loss: 3.4377, perplexity: 31.1167
+loss: 3.4904, perplexity: 32.7995
+loss: 3.5534, perplexity: 34.9336
+loss: 3.5354, perplexity: 34.3087
+loss: 3.6857, perplexity: 39.8742
+loss: 3.6439, perplexity: 38.2420
+loss: 3.7005, perplexity: 40.4666
+loss: 3.6768, perplexity: 39.5192
+loss: 3.6655, perplexity: 39.0754
+loss: 3.7055, perplexity: 40.6701
+loss: 3.7287, perplexity: 41.6238
+> val_perplexity: 42.5460
+>> saved: state_dict/GPT2-Chinese-poem_raw_val_perplexity_42.546
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 10
+loss: 4.1737, perplexity: 64.9549
+loss: 4.0758, perplexity: 58.8950
+loss: 3.7897, perplexity: 44.2442
+loss: 3.9205, perplexity: 50.4248
+loss: 3.8117, perplexity: 45.2262
+loss: 3.7268, perplexity: 41.5456
+loss: 3.6756, perplexity: 39.4725
+loss: 3.6433, perplexity: 38.2196
+loss: 3.6282, perplexity: 37.6449
+loss: 3.7033, perplexity: 40.5816
+loss: 3.7225, perplexity: 41.3689
+loss: 3.7592, perplexity: 42.9129
+loss: 3.7044, perplexity: 40.6261
+loss: 3.6494, perplexity: 38.4515
+loss: 3.6366, perplexity: 37.9624
+loss: 3.6038, perplexity: 36.7389
+loss: 3.6272, perplexity: 37.6056
+> val_perplexity: 41.5762
+>> saved: state_dict/GPT2-Chinese-poem_raw_val_perplexity_41.5762
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 11
+loss: 3.6541, perplexity: 38.6346
+loss: 3.8333, perplexity: 46.2136
+loss: 4.0782, perplexity: 59.0374
+loss: 3.7927, perplexity: 44.3754
+loss: 3.6167, perplexity: 37.2135
+loss: 3.4884, perplexity: 32.7332
+loss: 3.5986, perplexity: 36.5474
+loss: 3.5087, perplexity: 33.4044
+loss: 3.4499, perplexity: 31.4967
+loss: 3.4226, perplexity: 30.6499
+loss: 3.4146, perplexity: 30.4041
+loss: 3.4247, perplexity: 30.7127
+loss: 3.4350, perplexity: 31.0306
+loss: 3.5165, perplexity: 33.6658
+loss: 3.4928, perplexity: 32.8790
+loss: 3.4785, perplexity: 32.4098
+loss: 3.5098, perplexity: 33.4416
+> val_perplexity: 41.4250
+>> saved: state_dict/GPT2-Chinese-poem_raw_val_perplexity_41.425
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 12
+loss: 3.5192, perplexity: 33.7566
+loss: 3.8410, perplexity: 46.5735
+loss: 3.4978, perplexity: 33.0434
+loss: 3.7105, perplexity: 40.8725
+loss: 3.6076, perplexity: 36.8784
+loss: 3.6978, perplexity: 40.3564
+loss: 3.5872, perplexity: 36.1310
+loss: 3.5501, perplexity: 34.8177
+loss: 3.4936, perplexity: 32.9050
+loss: 3.4431, perplexity: 31.2835
+loss: 3.4738, perplexity: 32.2576
+loss: 3.4525, perplexity: 31.5778
+loss: 3.4030, perplexity: 30.0528
+loss: 3.3942, perplexity: 29.7906
+loss: 3.3862, perplexity: 29.5540
+loss: 3.4228, perplexity: 30.6551
+loss: 3.4666, perplexity: 32.0277
+> val_perplexity: 42.3789
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 13
+loss: 3.5690, perplexity: 35.4818
+loss: 3.6549, perplexity: 38.6643
+loss: 3.7339, perplexity: 41.8419
+loss: 3.6200, perplexity: 37.3376
+loss: 3.7213, perplexity: 41.3201
+loss: 3.5852, perplexity: 36.0618
+loss: 3.5748, perplexity: 35.6879
+loss: 3.8446, perplexity: 46.7418
+loss: 3.7865, perplexity: 44.0998
+loss: 3.7124, perplexity: 40.9521
+loss: 3.6501, perplexity: 38.4778
+loss: 3.6914, perplexity: 40.1021
+loss: 3.6588, perplexity: 38.8155
+loss: 3.6738, perplexity: 39.4026
+loss: 3.6362, perplexity: 37.9484
+loss: 3.5935, perplexity: 36.3612
+loss: 3.6075, perplexity: 36.8744
+> val_perplexity: 42.4948
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 14
+loss: 3.4926, perplexity: 32.8697
+loss: 3.7958, perplexity: 44.5149
+loss: 3.7083, perplexity: 40.7831
+loss: 3.6078, perplexity: 36.8848
+loss: 3.4448, perplexity: 31.3381
+loss: 3.4657, perplexity: 31.9989
+loss: 3.3846, perplexity: 29.5060
+loss: 3.3344, perplexity: 28.0624
+loss: 3.2734, perplexity: 26.4006
+loss: 3.2841, perplexity: 26.6855
+loss: 3.3856, perplexity: 29.5358
+loss: 3.3613, perplexity: 28.8257
+loss: 3.3888, perplexity: 29.6309
+loss: 3.3910, perplexity: 29.6961
+loss: 3.3727, perplexity: 29.1586
+loss: 3.3697, perplexity: 29.0695
+loss: 3.4060, perplexity: 30.1444
+> val_perplexity: 43.4259
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 15
+loss: 3.7778, perplexity: 43.7197
+loss: 3.6919, perplexity: 40.1223
+loss: 3.6650, perplexity: 39.0554
+loss: 3.4709, perplexity: 32.1641
+loss: 3.3161, perplexity: 27.5522
+loss: 3.3021, perplexity: 27.1689
+loss: 3.2502, perplexity: 25.7958
+loss: 3.2379, perplexity: 25.4799
+loss: 3.1998, perplexity: 24.5270
+loss: 3.3778, perplexity: 29.3063
+loss: 3.3640, perplexity: 28.9055
+loss: 3.3865, perplexity: 29.5621
+loss: 3.3697, perplexity: 29.0687
+loss: 3.3644, perplexity: 28.9158
+loss: 3.3446, perplexity: 28.3506
+loss: 3.3194, perplexity: 27.6444
+loss: 3.3451, perplexity: 28.3620
+> val_perplexity: 43.3318
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 16
+loss: 2.9705, perplexity: 19.5022
+loss: 3.1011, perplexity: 22.2218
+loss: 3.0355, perplexity: 20.8117
+loss: 3.0640, perplexity: 21.4141
+loss: 3.1045, perplexity: 22.2971
+loss: 3.0924, perplexity: 22.0291
+loss: 3.1292, perplexity: 22.8546
+loss: 3.1850, perplexity: 24.1670
+loss: 3.1429, perplexity: 23.1711
+loss: 3.1403, perplexity: 23.1113
+loss: 3.1767, perplexity: 23.9664
+loss: 3.1402, perplexity: 23.1083
+loss: 3.1516, perplexity: 23.3729
+loss: 3.2042, perplexity: 24.6349
+loss: 3.1680, perplexity: 23.7595
+loss: 3.2201, perplexity: 25.0308
+loss: 3.2460, perplexity: 25.6868
+> val_perplexity: 44.0512
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 17
+loss: 3.1860, perplexity: 24.1907
+loss: 3.4034, perplexity: 30.0672
+loss: 3.2661, perplexity: 26.2093
+loss: 3.1518, perplexity: 23.3789
+loss: 3.1126, perplexity: 22.4805
+loss: 3.0758, perplexity: 21.6677
+loss: 3.0745, perplexity: 21.6395
+loss: 3.1673, perplexity: 23.7433
+loss: 3.1104, perplexity: 22.4290
+loss: 3.0917, perplexity: 22.0149
+loss: 3.1630, perplexity: 23.6407
+loss: 3.1678, perplexity: 23.7544
+loss: 3.1705, perplexity: 23.8195
+loss: 3.2244, perplexity: 25.1393
+loss: 3.2267, perplexity: 25.1970
+loss: 3.2638, perplexity: 26.1500
+loss: 3.2589, perplexity: 26.0215
+> val_perplexity: 44.2401
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 18
+loss: 2.8555, perplexity: 17.3827
+loss: 2.7218, perplexity: 15.2084
+loss: 3.1032, perplexity: 22.2682
+loss: 3.0014, perplexity: 20.1141
+loss: 3.2025, perplexity: 24.5941
+loss: 3.1670, perplexity: 23.7350
+loss: 3.1171, perplexity: 22.5799
+loss: 3.2190, perplexity: 25.0042
+loss: 3.1898, perplexity: 24.2830
+loss: 3.1748, perplexity: 23.9218
+loss: 3.1262, perplexity: 22.7864
+loss: 3.0760, perplexity: 21.6707
+loss: 3.1602, perplexity: 23.5758
+loss: 3.1704, perplexity: 23.8181
+loss: 3.2345, perplexity: 25.3932
+loss: 3.2156, perplexity: 24.9185
+loss: 3.2995, perplexity: 27.0990
+> val_perplexity: 46.0092
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 19
+loss: 3.7279, perplexity: 41.5930
+loss: 3.8396, perplexity: 46.5051
+loss: 3.6970, perplexity: 40.3260
+loss: 3.4739, perplexity: 32.2632
+loss: 3.4088, perplexity: 30.2300
+loss: 3.3042, perplexity: 27.2278
+loss: 3.2345, perplexity: 25.3941
+loss: 3.1864, perplexity: 24.2016
+loss: 3.3458, perplexity: 28.3845
+loss: 3.3299, perplexity: 27.9367
+loss: 3.3441, perplexity: 28.3337
+loss: 3.3058, perplexity: 27.2706
+loss: 3.2888, perplexity: 26.8096
+loss: 3.3345, perplexity: 28.0634
+loss: 3.3035, perplexity: 27.2088
+loss: 3.2523, perplexity: 25.8487
+loss: 3.2716, perplexity: 26.3536
+> val_perplexity: 47.0505
