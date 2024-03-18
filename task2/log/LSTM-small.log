@@ -1,173 +1,14 @@
-cuda memory allocated: 5828608
-> n_trainable_params: 1447805, n_nontrainable_params: 9000
+cuda memory allocated: 10555392
+> n_trainable_params: 1447805, n_nontrainable_params: 1190700
 > training arguments:
 >>> model_name: LSTM
 >>> dataset: small
 >>> optimizer: <class 'torch.optim.adamw.AdamW'>
->>> initializer: <function kaiming_uniform_ at 0x00000164DC1C0040>
+>>> initializer: <function kaiming_uniform_ at 0x000001993FEDBF40>
 >>> lr: 0.001
 >>> dropout: 0.1
 >>> l2reg: 0.01
->>> epochs: 5
->>> batch_size: 50
->>> log_step: 10
->>> embed_dim: 300
->>> hidden_dim: 300
->>> bert_dim: 768
->>> kernel_sizes: [3, 4, 5]
->>> kernel_num: 100
->>> max_seq_len: 85
->>> num_classes: 5
->>> device: cuda
->>> seed: 42
->>> valset_ratio: 0.2
->>> model_class: <class 'task2.models.lstm.LSTM'>
->>> dataset_file: {'train': 'dataset/train_small.csv', 'test': 'dataset/test.csv'}
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-epoch: 0
-cuda memory allocated: 5828608
-> n_trainable_params: 1447805, n_nontrainable_params: 9000
-> training arguments:
->>> model_name: LSTM
->>> dataset: small
->>> optimizer: <class 'torch.optim.adamw.AdamW'>
->>> initializer: <function kaiming_uniform_ at 0x0000024218070040>
->>> lr: 0.001
->>> dropout: 0.1
->>> l2reg: 0.01
->>> epochs: 5
->>> batch_size: 50
->>> log_step: 10
->>> embed_dim: 300
->>> hidden_dim: 300
->>> bert_dim: 768
->>> kernel_sizes: [3, 4, 5]
->>> kernel_num: 100
->>> pretrained_bert_name: bert-base-uncased
->>> max_seq_len: 85
->>> num_classes: 5
->>> device: cuda
->>> seed: 42
->>> valset_ratio: 0.2
->>> model_class: <class 'task2.models.lstm.LSTM'>
->>> dataset_file: {'train': 'dataset/train_small.csv', 'test': 'dataset/test.csv'}
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-epoch: 0
-cuda memory allocated: 5828608
-> n_trainable_params: 1447805, n_nontrainable_params: 9000
-> training arguments:
->>> model_name: LSTM
->>> dataset: small
->>> optimizer: <class 'torch.optim.adamw.AdamW'>
->>> initializer: <function kaiming_uniform_ at 0x00000249EC420040>
->>> lr: 0.001
->>> dropout: 0.1
->>> l2reg: 0.01
->>> epochs: 5
->>> batch_size: 50
->>> log_step: 10
->>> embed_dim: 300
->>> hidden_dim: 300
->>> bert_dim: 768
->>> kernel_sizes: [3, 4, 5]
->>> kernel_num: 100
->>> pretrained_bert_name: bert-base-uncased
->>> max_seq_len: 85
->>> num_classes: 5
->>> device: cuda
->>> seed: 42
->>> valset_ratio: 0.2
->>> model_class: <class 'task2.models.lstm.LSTM'>
->>> dataset_file: {'train': 'dataset/train_small.csv', 'test': 'dataset/test.csv'}
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-epoch: 0
-loss: 1.5515, acc: 0.2260
-> val_acc: 0.3700, val_f1: 0.1722
->> saved: state_dict/LSTM_small_val_acc_0.37
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-epoch: 1
-loss: 1.3787, acc: 0.3600
-loss: 1.2822, acc: 0.4429
-> val_acc: 0.7100, val_f1: 0.2069
->> saved: state_dict/LSTM_small_val_acc_0.71
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-epoch: 2
-loss: 1.1562, acc: 0.7025
-> val_acc: 0.7150, val_f1: 0.2238
->> saved: state_dict/LSTM_small_val_acc_0.715
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-epoch: 3
-loss: 1.1456, acc: 0.6200
-loss: 1.0381, acc: 0.6717
-> val_acc: 0.7100, val_f1: 0.2673
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-epoch: 4
-loss: 0.8964, acc: 0.7167
-loss: 0.9191, acc: 0.7087
-> val_acc: 0.7000, val_f1: 0.2970
-cuda memory allocated: 6244864
-> n_trainable_params: 1447805, n_nontrainable_params: 113100
-> training arguments:
->>> model_name: LSTM
->>> dataset: small
->>> optimizer: <class 'torch.optim.adamw.AdamW'>
->>> initializer: <function kaiming_uniform_ at 0x000002534CECBF40>
->>> lr: 0.001
->>> dropout: 0.1
->>> l2reg: 0.01
->>> epochs: 5
->>> batch_size: 50
->>> log_step: 10
->>> embed_dim: 300
->>> hidden_dim: 300
->>> bert_dim: 768
->>> kernel_sizes: [3, 4, 5]
->>> kernel_num: 100
->>> max_seq_len: 85
->>> num_classes: 5
->>> device: cuda
->>> seed: 42
->>> valset_ratio: 0.2
->>> model_class: <class 'task2.models.lstm.LSTM'>
->>> dataset_file: {'train': 'dataset/train_small.csv', 'test': 'dataset/test.csv'}
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-epoch: 0
-loss: 1.3651, acc: 0.4600
-> val_acc: 0.6800, val_f1: 0.3097
->> saved: state_dict/LSTM_small_val_acc_0.68
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-epoch: 1
-loss: 0.9873, acc: 0.6200
-loss: 0.9109, acc: 0.6429
-> val_acc: 0.7150, val_f1: 0.3736
->> saved: state_dict/LSTM_small_val_acc_0.715
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-epoch: 2
-loss: 0.7156, acc: 0.7425
-> val_acc: 0.7350, val_f1: 0.3439
->> saved: state_dict/LSTM_small_val_acc_0.735
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-epoch: 3
-loss: 0.7290, acc: 0.7400
-loss: 0.6057, acc: 0.7983
-> val_acc: 0.7400, val_f1: 0.3862
->> saved: state_dict/LSTM_small_val_acc_0.74
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-epoch: 4
-loss: 0.4820, acc: 0.8433
-loss: 0.4800, acc: 0.8488
-> val_acc: 0.7350, val_f1: 0.3796
-cuda memory allocated: 6244864
-> n_trainable_params: 1447805, n_nontrainable_params: 113100
-> training arguments:
->>> model_name: LSTM
->>> dataset: small
->>> optimizer: <class 'torch.optim.adamw.AdamW'>
->>> initializer: <function kaiming_uniform_ at 0x0000027BD3BCBF40>
->>> lr: 0.001
->>> dropout: 0.1
->>> l2reg: 0.01
->>> epochs: 5
+>>> epochs: 10
 >>> batch_size: 50
 >>> log_step: 10
 >>> embed_dim: 300
@@ -184,80 +25,284 @@ cuda memory allocated: 6244864
 >>> dataset_file: {'train': 'dataset/train_small.csv', 'test': 'dataset/test.csv'}
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 epoch: 0
-loss: 1.3651, acc: 0.4600
-> val_acc: 0.6800, val_f1: 0.3097
->> saved: state_dict/LSTM_small_val_acc_0.68
+loss: 1.5287, acc: 0.3600
+loss: 1.3956, acc: 0.4230
+loss: 1.3221, acc: 0.4547
+loss: 1.2782, acc: 0.4715
+loss: 1.2512, acc: 0.4928
+loss: 1.2047, acc: 0.5217
+loss: 1.1784, acc: 0.5391
+loss: 1.1606, acc: 0.5457
+loss: 1.1390, acc: 0.5540
+loss: 1.1321, acc: 0.5574
+loss: 1.1193, acc: 0.5622
+loss: 1.1071, acc: 0.5668
+loss: 1.0892, acc: 0.5742
+loss: 1.0791, acc: 0.5780
+loss: 1.0730, acc: 0.5820
+loss: 1.0627, acc: 0.5860
+loss: 1.0532, acc: 0.5904
+loss: 1.0449, acc: 0.5932
+loss: 1.0361, acc: 0.5962
+loss: 1.0294, acc: 0.5972
+loss: 1.0223, acc: 0.5996
+loss: 1.0131, acc: 0.6029
+loss: 1.0076, acc: 0.6042
+loss: 1.0014, acc: 0.6068
+loss: 0.9959, acc: 0.6094
+> val_acc: 0.6556, val_f1: 0.4306
+>> saved: state_dict/LSTM_small_val_acc_0.6556
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 epoch: 1
-loss: 0.9873, acc: 0.6200
-loss: 0.9109, acc: 0.6429
-> val_acc: 0.7150, val_f1: 0.3736
->> saved: state_dict/LSTM_small_val_acc_0.715
+loss: 0.8250, acc: 0.6800
+loss: 0.7568, acc: 0.7040
+loss: 0.7345, acc: 0.7140
+loss: 0.7397, acc: 0.7085
+loss: 0.7457, acc: 0.7048
+loss: 0.7461, acc: 0.7017
+loss: 0.7514, acc: 0.6994
+loss: 0.7563, acc: 0.6990
+loss: 0.7528, acc: 0.7000
+loss: 0.7556, acc: 0.6960
+loss: 0.7578, acc: 0.6933
+loss: 0.7503, acc: 0.6963
+loss: 0.7509, acc: 0.6968
+loss: 0.7532, acc: 0.6946
+loss: 0.7581, acc: 0.6917
+loss: 0.7564, acc: 0.6919
+loss: 0.7571, acc: 0.6916
+loss: 0.7589, acc: 0.6913
+loss: 0.7614, acc: 0.6902
+loss: 0.7621, acc: 0.6907
+loss: 0.7615, acc: 0.6910
+loss: 0.7595, acc: 0.6922
+loss: 0.7584, acc: 0.6925
+loss: 0.7562, acc: 0.6935
+loss: 0.7565, acc: 0.6946
+> val_acc: 0.6671, val_f1: 0.4669
+>> saved: state_dict/LSTM_small_val_acc_0.6671
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 epoch: 2
-loss: 0.7156, acc: 0.7425
-> val_acc: 0.7350, val_f1: 0.3439
->> saved: state_dict/LSTM_small_val_acc_0.735
+loss: 0.6011, acc: 0.7700
+loss: 0.6238, acc: 0.7610
+loss: 0.6353, acc: 0.7580
+loss: 0.6329, acc: 0.7600
+loss: 0.6407, acc: 0.7556
+loss: 0.6496, acc: 0.7507
+loss: 0.6438, acc: 0.7523
+loss: 0.6469, acc: 0.7500
+loss: 0.6384, acc: 0.7536
+loss: 0.6361, acc: 0.7528
+loss: 0.6383, acc: 0.7522
+loss: 0.6425, acc: 0.7495
+loss: 0.6458, acc: 0.7469
+loss: 0.6467, acc: 0.7466
+loss: 0.6472, acc: 0.7443
+loss: 0.6522, acc: 0.7424
+loss: 0.6504, acc: 0.7425
+loss: 0.6488, acc: 0.7438
+loss: 0.6469, acc: 0.7447
+loss: 0.6500, acc: 0.7435
+loss: 0.6527, acc: 0.7428
+loss: 0.6562, acc: 0.7410
+loss: 0.6571, acc: 0.7397
+loss: 0.6562, acc: 0.7398
+loss: 0.6554, acc: 0.7408
+> val_acc: 0.6770, val_f1: 0.5014
+>> saved: state_dict/LSTM_small_val_acc_0.677
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 epoch: 3
-loss: 0.7290, acc: 0.7400
-loss: 0.6057, acc: 0.7983
-> val_acc: 0.7400, val_f1: 0.3862
->> saved: state_dict/LSTM_small_val_acc_0.74
+loss: 0.5693, acc: 0.7680
+loss: 0.5426, acc: 0.7790
+loss: 0.5350, acc: 0.7853
+loss: 0.5310, acc: 0.7885
+loss: 0.5283, acc: 0.7952
+loss: 0.5286, acc: 0.7927
+loss: 0.5270, acc: 0.7980
+loss: 0.5325, acc: 0.7955
+loss: 0.5355, acc: 0.7942
+loss: 0.5356, acc: 0.7952
+loss: 0.5374, acc: 0.7953
+loss: 0.5438, acc: 0.7928
+loss: 0.5428, acc: 0.7920
+loss: 0.5418, acc: 0.7924
+loss: 0.5430, acc: 0.7915
+loss: 0.5459, acc: 0.7895
+loss: 0.5499, acc: 0.7876
+loss: 0.5491, acc: 0.7877
+loss: 0.5498, acc: 0.7862
+loss: 0.5515, acc: 0.7848
+loss: 0.5545, acc: 0.7818
+loss: 0.5565, acc: 0.7801
+loss: 0.5578, acc: 0.7792
+loss: 0.5586, acc: 0.7794
+loss: 0.5601, acc: 0.7787
+> val_acc: 0.6684, val_f1: 0.5354
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 epoch: 4
-loss: 0.4820, acc: 0.8433
-loss: 0.4800, acc: 0.8488
-> val_acc: 0.7350, val_f1: 0.3796
-cuda memory allocated: 6244864
-> n_trainable_params: 1447805, n_nontrainable_params: 113100
-> training arguments:
->>> model_name: LSTM
->>> dataset: small
->>> optimizer: <class 'torch.optim.adamw.AdamW'>
->>> initializer: <function kaiming_uniform_ at 0x000001971A61BF40>
->>> lr: 0.001
->>> dropout: 0.1
->>> l2reg: 0.01
->>> epochs: 5
->>> batch_size: 50
->>> log_step: 10
->>> embed_dim: 300
->>> hidden_dim: 300
->>> bert_dim: 768
->>> kernel_sizes: [3, 4, 5]
->>> kernel_num: 100
->>> max_seq_len: 85
->>> num_classes: 5
->>> device: cuda
->>> seed: 42
->>> valset_ratio: 0.2
->>> model_class: <class 'models.lstm.LSTM'>
->>> dataset_file: {'train': 'dataset/train_small.csv', 'test': 'dataset/test.csv'}
+loss: 0.4114, acc: 0.8540
+loss: 0.4106, acc: 0.8540
+loss: 0.4058, acc: 0.8620
+loss: 0.4161, acc: 0.8505
+loss: 0.4229, acc: 0.8476
+loss: 0.4236, acc: 0.8457
+loss: 0.4216, acc: 0.8471
+loss: 0.4242, acc: 0.8468
+loss: 0.4325, acc: 0.8393
+loss: 0.4342, acc: 0.8382
+loss: 0.4363, acc: 0.8371
+loss: 0.4356, acc: 0.8370
+loss: 0.4386, acc: 0.8363
+loss: 0.4403, acc: 0.8357
+loss: 0.4436, acc: 0.8337
+loss: 0.4474, acc: 0.8324
+loss: 0.4471, acc: 0.8328
+loss: 0.4479, acc: 0.8313
+loss: 0.4490, acc: 0.8300
+loss: 0.4510, acc: 0.8289
+loss: 0.4529, acc: 0.8280
+loss: 0.4546, acc: 0.8275
+loss: 0.4563, acc: 0.8270
+loss: 0.4592, acc: 0.8254
+loss: 0.4620, acc: 0.8241
+> val_acc: 0.6636, val_f1: 0.5054
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-epoch: 0
-loss: 1.3651, acc: 0.4600
-> val_acc: 0.6800, val_f1: 0.3097
->> saved: state_dict/LSTM_small_val_acc_0.68
+epoch: 5
+loss: 0.3363, acc: 0.9000
+loss: 0.3498, acc: 0.8870
+loss: 0.3433, acc: 0.8847
+loss: 0.3333, acc: 0.8910
+loss: 0.3268, acc: 0.8916
+loss: 0.3269, acc: 0.8900
+loss: 0.3311, acc: 0.8889
+loss: 0.3304, acc: 0.8870
+loss: 0.3357, acc: 0.8851
+loss: 0.3426, acc: 0.8822
+loss: 0.3442, acc: 0.8813
+loss: 0.3494, acc: 0.8777
+loss: 0.3490, acc: 0.8757
+loss: 0.3537, acc: 0.8729
+loss: 0.3528, acc: 0.8741
+loss: 0.3534, acc: 0.8751
+loss: 0.3560, acc: 0.8729
+loss: 0.3571, acc: 0.8714
+loss: 0.3581, acc: 0.8707
+loss: 0.3588, acc: 0.8698
+loss: 0.3568, acc: 0.8714
+loss: 0.3581, acc: 0.8705
+loss: 0.3593, acc: 0.8687
+loss: 0.3626, acc: 0.8668
+loss: 0.3653, acc: 0.8657
+> val_acc: 0.6556, val_f1: 0.5153
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-epoch: 1
-loss: 0.9873, acc: 0.6200
-loss: 0.9109, acc: 0.6429
-> val_acc: 0.7150, val_f1: 0.3736
->> saved: state_dict/LSTM_small_val_acc_0.715
+epoch: 6
+loss: 0.2325, acc: 0.9380
+loss: 0.2569, acc: 0.9260
+loss: 0.2430, acc: 0.9280
+loss: 0.2426, acc: 0.9305
+loss: 0.2487, acc: 0.9276
+loss: 0.2431, acc: 0.9287
+loss: 0.2403, acc: 0.9306
+loss: 0.2458, acc: 0.9255
+loss: 0.2452, acc: 0.9244
+loss: 0.2519, acc: 0.9204
+loss: 0.2556, acc: 0.9195
+loss: 0.2566, acc: 0.9178
+loss: 0.2585, acc: 0.9162
+loss: 0.2612, acc: 0.9156
+loss: 0.2615, acc: 0.9144
+loss: 0.2609, acc: 0.9140
+loss: 0.2617, acc: 0.9133
+loss: 0.2642, acc: 0.9121
+loss: 0.2664, acc: 0.9107
+loss: 0.2667, acc: 0.9104
+loss: 0.2670, acc: 0.9098
+loss: 0.2662, acc: 0.9101
+loss: 0.2677, acc: 0.9093
+loss: 0.2695, acc: 0.9083
+loss: 0.2719, acc: 0.9076
+> val_acc: 0.6399, val_f1: 0.5132
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-epoch: 2
-loss: 0.7156, acc: 0.7425
-> val_acc: 0.7350, val_f1: 0.3439
->> saved: state_dict/LSTM_small_val_acc_0.735
+epoch: 7
+loss: 0.2253, acc: 0.9120
+loss: 0.2027, acc: 0.9320
+loss: 0.2047, acc: 0.9367
+loss: 0.2023, acc: 0.9400
+loss: 0.1990, acc: 0.9436
+loss: 0.2002, acc: 0.9427
+loss: 0.1949, acc: 0.9446
+loss: 0.1916, acc: 0.9453
+loss: 0.1937, acc: 0.9444
+loss: 0.1916, acc: 0.9452
+loss: 0.1930, acc: 0.9445
+loss: 0.1952, acc: 0.9435
+loss: 0.1952, acc: 0.9431
+loss: 0.1923, acc: 0.9433
+loss: 0.1966, acc: 0.9409
+loss: 0.1971, acc: 0.9400
+loss: 0.1990, acc: 0.9394
+loss: 0.1996, acc: 0.9390
+loss: 0.2000, acc: 0.9389
+loss: 0.2007, acc: 0.9386
+loss: 0.2015, acc: 0.9381
+loss: 0.2024, acc: 0.9375
+loss: 0.2023, acc: 0.9377
+loss: 0.2045, acc: 0.9364
+loss: 0.2055, acc: 0.9360
+> val_acc: 0.6546, val_f1: 0.5208
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-epoch: 3
-loss: 0.7290, acc: 0.7400
-loss: 0.6057, acc: 0.7983
-> val_acc: 0.7400, val_f1: 0.3862
->> saved: state_dict/LSTM_small_val_acc_0.74
+epoch: 8
+loss: 0.1228, acc: 0.9740
+loss: 0.1425, acc: 0.9670
+loss: 0.1427, acc: 0.9667
+loss: 0.1450, acc: 0.9650
+loss: 0.1435, acc: 0.9652
+loss: 0.1418, acc: 0.9643
+loss: 0.1428, acc: 0.9643
+loss: 0.1426, acc: 0.9643
+loss: 0.1437, acc: 0.9640
+loss: 0.1419, acc: 0.9646
+loss: 0.1406, acc: 0.9644
+loss: 0.1394, acc: 0.9647
+loss: 0.1387, acc: 0.9649
+loss: 0.1390, acc: 0.9644
+loss: 0.1390, acc: 0.9641
+loss: 0.1416, acc: 0.9637
+loss: 0.1442, acc: 0.9626
+loss: 0.1470, acc: 0.9613
+loss: 0.1473, acc: 0.9612
+loss: 0.1476, acc: 0.9614
+loss: 0.1493, acc: 0.9604
+loss: 0.1506, acc: 0.9604
+loss: 0.1521, acc: 0.9597
+loss: 0.1525, acc: 0.9597
+loss: 0.1532, acc: 0.9592
+> val_acc: 0.6427, val_f1: 0.5077
 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
-epoch: 4
-loss: 0.4820, acc: 0.8433
-loss: 0.4800, acc: 0.8488
-> val_acc: 0.7350, val_f1: 0.3796
+epoch: 9
+loss: 0.1190, acc: 0.9660
+loss: 0.1187, acc: 0.9670
+loss: 0.1117, acc: 0.9700
+loss: 0.1084, acc: 0.9700
+loss: 0.1133, acc: 0.9692
+loss: 0.1171, acc: 0.9693
+loss: 0.1156, acc: 0.9706
+loss: 0.1152, acc: 0.9708
+loss: 0.1162, acc: 0.9709
+loss: 0.1172, acc: 0.9700
+loss: 0.1181, acc: 0.9695
+loss: 0.1165, acc: 0.9698
+loss: 0.1165, acc: 0.9698
+loss: 0.1172, acc: 0.9699
+loss: 0.1170, acc: 0.9701
+loss: 0.1187, acc: 0.9694
+loss: 0.1182, acc: 0.9694
+loss: 0.1186, acc: 0.9692
+loss: 0.1190, acc: 0.9691
+loss: 0.1199, acc: 0.9688
+loss: 0.1208, acc: 0.9686
+loss: 0.1198, acc: 0.9690
+loss: 0.1196, acc: 0.9690
+loss: 0.1194, acc: 0.9692
+loss: 0.1194, acc: 0.9691
+> val_acc: 0.6450, val_f1: 0.5163
