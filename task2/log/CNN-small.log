@@ -1,0 +1,101 @@
+cuda memory allocated: 1485312
+> n_trainable_params: 361805, n_nontrainable_params: 9000
+> training arguments:
+>>> model_name: CNN
+>>> dataset: small
+>>> optimizer: <class 'torch.optim.adamw.AdamW'>
+>>> initializer: <function kaiming_uniform_ at 0x000001601B2A0040>
+>>> lr: 0.001
+>>> dropout: 0.1
+>>> l2reg: 0.01
+>>> epochs: 5
+>>> batch_size: 50
+>>> log_step: 10
+>>> embed_dim: 300
+>>> hidden_dim: 300
+>>> bert_dim: 768
+>>> kernel_sizes: [3, 4, 5]
+>>> kernel_num: 100
+>>> max_seq_len: 85
+>>> num_classes: 5
+>>> device: cuda
+>>> seed: 42
+>>> valset_ratio: 0.2
+>>> model_class: <class 'task2.models.cnn.CNN'>
+>>> dataset_file: {'train': 'dataset/train_small.csv', 'test': 'dataset/test.csv'}
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 0
+loss: 1.3722, acc: 0.6260
+> val_acc: 0.6600, val_f1: 0.1936
+>> saved: state_dict/CNN_small_val_acc_0.66
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 1
+loss: 1.0566, acc: 0.7500
+loss: 1.1059, acc: 0.6986
+> val_acc: 0.6650, val_f1: 0.2788
+>> saved: state_dict/CNN_small_val_acc_0.665
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 2
+loss: 1.0323, acc: 0.7000
+> val_acc: 0.6550, val_f1: 0.2570
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 3
+loss: 0.9645, acc: 0.7100
+loss: 0.9486, acc: 0.7150
+> val_acc: 0.6650, val_f1: 0.2650
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 4
+loss: 0.8608, acc: 0.7233
+loss: 0.8792, acc: 0.7175
+> val_acc: 0.6600, val_f1: 0.2553
+cuda memory allocated: 1901568
+> n_trainable_params: 361805, n_nontrainable_params: 113100
+> training arguments:
+>>> model_name: CNN
+>>> dataset: small
+>>> optimizer: <class 'torch.optim.adamw.AdamW'>
+>>> initializer: <function kaiming_uniform_ at 0x00000191837DBF40>
+>>> lr: 0.001
+>>> dropout: 0.1
+>>> l2reg: 0.01
+>>> epochs: 5
+>>> batch_size: 50
+>>> log_step: 10
+>>> embed_dim: 300
+>>> hidden_dim: 300
+>>> bert_dim: 768
+>>> kernel_sizes: [3, 4, 5]
+>>> kernel_num: 100
+>>> max_seq_len: 85
+>>> num_classes: 5
+>>> device: cuda
+>>> seed: 42
+>>> valset_ratio: 0.2
+>>> model_class: <class 'task2.models.cnn.CNN'>
+>>> dataset_file: {'train': 'dataset/train_small.csv', 'test': 'dataset/test.csv'}
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 0
+loss: 1.1825, acc: 0.6640
+> val_acc: 0.6800, val_f1: 0.2439
+>> saved: state_dict/CNN_small_val_acc_0.68
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 1
+loss: 0.6360, acc: 0.8100
+loss: 0.6862, acc: 0.7700
+> val_acc: 0.7100, val_f1: 0.3371
+>> saved: state_dict/CNN_small_val_acc_0.71
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 2
+loss: 0.6078, acc: 0.7925
+> val_acc: 0.7150, val_f1: 0.3335
+>> saved: state_dict/CNN_small_val_acc_0.715
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 3
+loss: 0.4330, acc: 0.8700
+loss: 0.4775, acc: 0.8500
+> val_acc: 0.7000, val_f1: 0.3271
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+epoch: 4
+loss: 0.4197, acc: 0.8767
+loss: 0.4158, acc: 0.8750
+> val_acc: 0.7000, val_f1: 0.3533
